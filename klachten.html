@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klachten & Feedback - Secufy</title>
+    <meta name="description" content="Heeft u een klacht of feedback over onze dienstverlening? Laat het ons weten via ons klachtenformulier. Wij nemen uw feedback serieus.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="alternate icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="favicon.svg">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CW9KK630PE"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-CW9KK630PE');
+    </script>
+    <style>
+        .klachten-hero {
+            background: linear-gradient(135deg, #009EFE 0%, #0077CC 100%);
+            padding: 150px 0 100px 0;
+            color: white;
+            text-align: center;
+        }
+        
+        .klachten-hero h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+        }
+        
+        .klachten-hero p {
+            font-size: 1.25rem;
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.95;
+        }
+        
+        .klachten-section {
+            padding: 100px 0;
+            background: var(--bg-light);
+        }
+        
+        .klachten-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 4rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .klachten-info {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: var(--shadow-md);
+            height: fit-content;
+        }
+        
+        .klachten-info h2 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 1.5rem;
+        }
+        
+        .klachten-info p {
+            color: var(--text-light);
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+        
+        .klachten-info ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .klachten-info li {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 0.75rem 0;
+            color: var(--text-dark);
+        }
+        
+        .klachten-info li i {
+            color: var(--primary-color);
+            margin-top: 0.25rem;
+        }
+        
+        .klachten-form-container {
+            background: #FFBE00;
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: var(--shadow-md);
+        }
+        
+        .klachten-form-container h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 0.5rem;
+        }
+        
+        .klachten-form-container > p {
+            color: var(--text-dark);
+            margin-bottom: 2rem;
+            font-size: 1.125rem;
+        }
+        
+        @media (max-width: 768px) {
+            .klachten-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .klachten-hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="images/Logo Secufy plat.png" alt="Secufy - Professionele Beveiliging Rotterdam" class="logo-image">
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#services">Diensten</a></li>
+                <li><a href="index.html#about">Over Ons</a></li>
+                <li><a href="klachten.html">Klachten</a></li>
+                <li><a href="solliciteren.html">Solliciteren</a></li>
+                <li><a href="index.html#offerte">Contact</a></li>
+            </ul>
+            <a href="index.html#offerte" class="nav-cta-btn">Offerte Aanvragen</a>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="klachten-hero">
+        <div class="container">
+            <h1>Klachten & Feedback</h1>
+            <p>Uw mening is belangrijk voor ons. Heeft u een klacht of feedback over onze dienstverlening? Laat het ons weten, zodat wij onze service kunnen verbeteren.</p>
+        </div>
+    </section>
+
+    <!-- Klachten Form Section -->
+    <section class="klachten-section">
+        <div class="container">
+            <div class="klachten-content">
+                <!-- Info Panel -->
+                <div class="klachten-info">
+                    <h2>Klachtenprocedure</h2>
+                    <p>Bij Secufy nemen wij klachten en feedback serieus. Wij streven ernaar om alle klachten binnen 5 werkdagen te behandelen.</p>
+                    
+                    <h3 style="font-size: 1.25rem; font-weight: 600; margin-top: 2rem; margin-bottom: 1rem;">Wat kunt u verwachten?</h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Ontvangstbevestiging binnen 24 uur</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Persoonlijk contact met een klachtencoördinator</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Zorgvuldige behandeling van uw klacht</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Schriftelijke terugkoppeling binnen 5 werkdagen</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Concrete oplossing of verbeterplan</span>
+                        </li>
+                    </ul>
+                    
+                    <div style="margin-top: 2rem; padding: 1.5rem; background: var(--bg-light); border-radius: 10px;">
+                        <h4 style="font-weight: 600; margin-bottom: 0.5rem;">Contact</h4>
+                        <p style="margin: 0.5rem 0; font-size: 0.95rem;">
+                            <i class="fas fa-phone" style="color: var(--primary-color); margin-right: 0.5rem;"></i>
+                            085 212 7504
+                        </p>
+                        <p style="margin: 0.5rem 0; font-size: 0.95rem;">
+                            <i class="fas fa-envelope" style="color: var(--primary-color); margin-right: 0.5rem;"></i>
+                            vraagje@secufy.nl
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Klachten Form -->
+                <div class="klachten-form-container">
+                    <h2>Dien uw klacht of feedback in</h2>
+                    <p>Vul onderstaand formulier in en wij nemen zo spoedig mogelijk contact met u op.</p>
+                    
+                    <form class="klachten-form" id="klachtenForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="naam">Naam *</label>
+                                <input type="text" id="naam" name="naam" placeholder="Voor- en achternaam" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mailadres *</label>
+                                <input type="email" id="email" name="email" placeholder="uw.email@voorbeeld.nl" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="telefoon">Telefoonnummer *</label>
+                                <input type="tel" id="telefoon" name="telefoon" placeholder="06 12345678" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="klantnummer">Klantnummer (indien van toepassing)</label>
+                                <input type="text" id="klantnummer" name="klantnummer" placeholder="Uw klantnummer">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label for="type">Type melding *</label>
+                            <select id="type" name="type" required>
+                                <option value="">Selecteer type</option>
+                                <option value="klacht">Klacht</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="compliment">Compliment</option>
+                                <option value="vraag">Vraag</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label for="onderwerp">Onderwerp *</label>
+                            <input type="text" id="onderwerp" name="onderwerp" placeholder="Korte omschrijving van uw melding" required>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label for="bericht">Uw melding *</label>
+                            <textarea id="bericht" name="bericht" rows="6" placeholder="Beschrijf uw klacht, feedback of vraag zo gedetailleerd mogelijk. Vermeld indien relevant: datum, locatie, betrokken medewerkers, etc." required></textarea>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label for="gewenste-oplossing">Gewenste oplossing of actie</label>
+                            <textarea id="gewenste-oplossing" name="gewenste_oplossing" rows="3" placeholder="Wat verwacht u van ons? (optioneel)"></textarea>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label class="checkbox-label privacy-label">
+                                <input type="checkbox" name="privacy" id="privacy-check" required>
+                                <span>Ik ga akkoord met de <a href="privacy.html" target="_blank">privacyverklaring</a> en geef toestemming voor het verwerken van mijn klacht *</span>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-large">
+                            <i class="fas fa-paper-plane"></i>
+                            Verstuur Melding
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/Logo Secufy plat.png" alt="Secufy Beveiliging" class="logo-image">
+                </div>
+                <p>&copy; 2024 Secufy. Alle rechten voorbehouden.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Klachten Form Handler
+        const klachtenForm = document.getElementById('klachtenForm');
+        if (klachtenForm) {
+            klachtenForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Get form data
+                const formData = {
+                    formType: 'klacht',
+                    naam: this.querySelector('input[name="naam"]').value,
+                    email: this.querySelector('input[name="email"]').value,
+                    telefoon: this.querySelector('input[name="telefoon"]').value,
+                    klantnummer: this.querySelector('input[name="klantnummer"]').value,
+                    type: this.querySelector('select[name="type"]').value,
+                    onderwerp: this.querySelector('input[name="onderwerp"]').value,
+                    bericht: this.querySelector('textarea[name="bericht"]').value,
+                    gewenste_oplossing: this.querySelector('textarea[name="gewenste_oplossing"]').value
+                };
+                
+                // Validate privacy checkbox
+                const privacyChecked = this.querySelector('input[name="privacy"]').checked;
+                if (!privacyChecked) {
+                    showNotification('U moet akkoord gaan met de privacyverklaring.', 'error');
+                    return;
+                }
+                
+                // Submit form
+                const submitBtn = this.querySelector('button[type="submit"]');
+                const originalText = submitBtn.innerHTML;
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Versturen...';
+                submitBtn.disabled = true;
+                
+                // Send email via PHP
+                fetch('send-email.php', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(formData)
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        showNotification('Bedankt voor uw melding. Wij hebben uw bericht ontvangen en nemen binnen 24 uur contact met u op.', 'success');
+                        this.reset();
+                    } else {
+                        showNotification(data.message || 'Er is een fout opgetreden. Probeer het later opnieuw.', 'error');
+                    }
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    showNotification('Er is een fout opgetreden. Probeer het later opnieuw.', 'error');
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                });
+            });
+        }
+        
+        // Notification System
+        function showNotification(message, type = 'info') {
+            const existingNotification = document.querySelector('.notification');
+            if (existingNotification) {
+                existingNotification.remove();
+            }
+            
+            const notification = document.createElement('div');
+            notification.className = `notification notification-${type}`;
+            notification.textContent = message;
+            
+            notification.style.cssText = `
+                position: fixed;
+                top: 100px;
+                right: 20px;
+                padding: 15px 20px;
+                border-radius: 10px;
+                color: white;
+                font-weight: 500;
+                z-index: 10000;
+                transform: translateX(400px);
+                transition: transform 0.3s ease;
+                max-width: 350px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            `;
+            
+            if (type === 'success') {
+                notification.style.background = '#10b981';
+            } else if (type === 'error') {
+                notification.style.background = '#ef4444';
+            } else {
+                notification.style.background = '#3b82f6';
+            }
+            
+            document.body.appendChild(notification);
+            
+            setTimeout(() => {
+                notification.style.transform = 'translateX(0)';
+            }, 100);
+            
+            setTimeout(() => {
+                notification.style.transform = 'translateX(400px)';
+                setTimeout(() => {
+                    if (notification.parentNode) {
+                        notification.remove();
+                    }
+                }, 300);
+            }, 5000);
+        }
+        
+        // Mobile Navigation
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        if (navToggle) {
+            navToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+            });
+        }
+    </script>
+    
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-analytics-compat.js"></script>
+    
+    <!-- Firebase Configuration -->
+    <script src="firebase-config.js"></script>
+    
+    <!-- Firebase Form Handlers -->
+    <script src="firebase-forms.js"></script>
+</body>
+</html>

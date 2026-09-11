@@ -1,0 +1,22 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Allow anyone to write to quotations collection
+    match /quotations/{document=**} {
+      allow write: if true;
+      allow read: if false;
+    }
+    
+    // Allow anyone to write to complaints collection
+    match /complaints/{document=**} {
+      allow write: if true;
+      allow read: if false;
+    }
+    
+    // Allow anyone to write to recruitment collection
+    match /recruitment/{document=**} {
+      allow write: if true;
+      allow read: if false;
+    }
+  }
+}

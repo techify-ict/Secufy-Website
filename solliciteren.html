@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solliciteren bij Secufy</title>
+    <meta name="description" content="Solliciteer eenvoudig bij Secufy. Laat je voornaam en e-mailadres achter (telefoon en CV optioneel) en wij nemen contact met je op.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Secufy">
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="alternate icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="favicon.svg">
+
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CW9KK630PE"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-CW9KK630PE');
+    </script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="images/Logo Secufy plat.png" alt="Secufy" class="logo-image">
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#services">Diensten</a></li>
+                <li><a href="index.html#about">Over Ons</a></li>
+                <li><a href="klachten.html">Klachten</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="solliciteren.html">Solliciteren</a></li>
+            </ul>
+            <a href="index.html#offerte" class="nav-cta-btn">Offerte Aanvragen</a>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="city-hero vacature-hero">
+        <div class="container">
+            <div class="vacature-hero-grid">
+                <div class="vacature-hero-copy">
+                    <h1>Solliciteren bij Secufy</h1>
+                    <p class="hero-subtitle">Wil je aan de slag in de beveiliging? Solliciteer vrijblijvend. Laat je voornaam en e-mailadres achter (telefoon en CV optioneel). We nemen snel contact met je op.</p>
+                    <div class="hero-buttons">
+                        <a href="#solliciteer" class="btn btn-primary btn-large">Solliciteer Direct</a>
+                        <a href="tel:+31852127504" class="btn btn-secondary btn-large"><i class="fas fa-phone"></i> Bel: 085 212 7504</a>
+                    </div>
+                </div>
+                <div class="vacature-video">
+                    <video controls playsinline preload="metadata" poster="images/Skyline%20secufy.jpg">
+                        <source src="/1000078547.mp4" type="video/mp4">
+                        Je browser ondersteunt geen video.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="quotation vacature-form-section" id="solliciteer">
+        <div class="container">
+            <div class="quotation-content vacature-form-wrap">
+                <div class="quotation-info">
+                    <h2>Solliciteer direct</h2>
+                    <p>Laat je gegevens achter en wij nemen contact met je op. Geen verplichtingen.</p>
+                    <div class="why-item"><i class="fas fa-check-circle"></i><p>Verplicht: voornaam en e-mailadres</p></div>
+                    <div class="why-item"><i class="fas fa-check-circle"></i><p>Optioneel: telefoonnummer en CV upload</p></div>
+                    <div class="why-item"><i class="fas fa-check-circle"></i><p>Reactie binnen 24 uur</p></div>
+                </div>
+
+                <div class="quote-form-container vacature-form-card">
+                    <h3>Sollicitatie</h3>
+                    <p>Vul je gegevens in</p>
+                    <form id="vacatureForm" class="quote-form vacature-form">
+                        <input type="text" name="firstName" placeholder="Voornaam *" required>
+                        <input type="email" name="email" placeholder="E-mailadres *" required>
+                        <input type="text" name="municipality" placeholder="Stad *" required>
+                        <input type="tel" name="phone" placeholder="Telefoonnummer (optioneel)">
+                        <input type="file" name="cv" accept=".pdf,.doc,.docx" />
+                        <input type="hidden" name="sourcePage" value="solliciteren.html">
+                        <button type="submit" class="btn btn-primary">Verstuur</button>
+                        <div id="vacatureStatus" class="vacature-note" style="display:none;"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <img src="images/Logo Secufy plat.png" alt="Secufy" class="logo-image">
+                    </a>
+                </div>
+                <div class="footer-links">
+                    <a href="privacy.html">Privacyverklaring</a>
+                    <a href="terms.html">Algemene Voorwaarden</a>
+                    <a href="klachten.html">Klachten</a>
+                </div>
+                <p>&copy; 2024 Secufy. Alle rechten voorbehouden.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-storage-compat.js"></script>
+    <script src="firebase-config.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+        const statusEl = document.getElementById('vacatureStatus');
+        const formEl = document.getElementById('vacatureForm');
+
+        function setStatus(message, isError) {
+            statusEl.style.display = 'block';
+            statusEl.style.color = isError ? '#ef4444' : '#10b981';
+            statusEl.textContent = message;
+        }
+
+        async function uploadCvIfPresent(file, recruitmentId) {
+            if (!file) return null;
+
+            const storage = firebase.storage();
+            const safeName = (file.name || 'cv').replace(/[^a-zA-Z0-9._-]/g, '_');
+            const path = `cv/${recruitmentId}/${Date.now()}-${safeName}`;
+            const ref = storage.ref().child(path);
+
+            await ref.put(file);
+            const url = await ref.getDownloadURL();
+            return { path, url, name: file.name || safeName };
+        }
+
+        formEl.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const fd = new FormData(formEl);
+            const firstName = (fd.get('firstName') || '').toString().trim();
+            const email = (fd.get('email') || '').toString().trim();
+            const phone = (fd.get('phone') || '').toString().trim();
+            const municipality = (fd.get('municipality') || '').toString().trim();
+            const sourcePage = (fd.get('sourcePage') || '').toString().trim();
+            const cvFile = fd.get('cv');
+
+            if (!firstName || !email || !municipality) {
+                setStatus('Vul je voornaam, e-mailadres en stad in.', true);
+                return;
+            }
+
+            const submitBtn = formEl.querySelector('button[type="submit"]');
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Versturen...';
+            statusEl.style.display = 'none';
+
+            try {
+                const db = firebase.firestore();
+                const createdAt = new Date().toISOString();
+
+                const docRef = await db.collection('recruitment').add({
+                    firstName,
+                    email,
+                    phone: phone || null,
+                    municipality: municipality || null,
+                    sourcePage: sourcePage || null,
+                    createdAt,
+                    cv: null
+                });
+
+                const fileIsFile = cvFile && typeof cvFile === 'object' && (cvFile.size || 0) > 0;
+                if (fileIsFile) {
+                    const cv = await uploadCvIfPresent(cvFile, docRef.id);
+                    if (cv) {
+                        await docRef.update({ cv });
+                    }
+                }
+
+                formEl.reset();
+                setStatus('Bedankt! We nemen snel contact met je op.', false);
+            } catch (err) {
+                console.error(err);
+                setStatus('Er ging iets mis. Probeer het later opnieuw.', true);
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Verstuur';
+            }
+        });
+    </script>
+</body>
+</html>

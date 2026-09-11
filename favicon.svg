@@ -1,0 +1,9 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <!-- Shield silhouette - left half blue -->
+  <path d="M16 3 L6 7 L6 15 Q6 22 16 28 L16 3 Z" 
+        fill="#009EFE"/>
+  
+  <!-- Shield silhouette - right half yellow -->
+  <path d="M16 3 L26 7 L26 15 Q26 22 16 28 L16 3 Z" 
+        fill="#FFBE00"/>
+</svg>

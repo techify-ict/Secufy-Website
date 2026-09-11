@@ -1,0 +1,38 @@
+{
+  "firestore": {
+    "rules": "firestore.rules"
+  },
+  "storage": {
+    "rules": "storage.rules"
+  },
+  "functions": {
+    "source": "functions",
+    "predeploy": [],
+    "runtime": "nodejs20"
+  },
+  "hosting": {
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**",
+      "functions/**",
+      "*.md",
+      ".env",
+      ".env.example",
+      "send-email.php",
+      "composer.json",
+      "firebase-debug.log"
+    ],
+    "redirects": [
+      {
+        "source": "/vacature-beveiliging-:splat",
+        "destination": "/vacature-beveiliger-:splat",
+        "type": 301
+      }
+    ],
+    "rewrites": [],
+    "cleanUrls": true,
+    "trailingSlash": false
+  }
+}
