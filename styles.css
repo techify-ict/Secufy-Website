@@ -1589,8 +1589,16 @@ img, video {
         max-width: 100%;
     }
 
+    .hero {
+        min-height: calc(80px + var(--photo-h));
+    }
+
+    .hero-photo {
+        top: 80px;
+    }
+
     .hero-container {
-        padding-top: var(--photo-h);
+        padding-top: calc(80px + var(--photo-h));
     }
 
     .hero-photo-fade {
