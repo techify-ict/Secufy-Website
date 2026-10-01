@@ -147,6 +147,7 @@ img, video {
 /* Hero Section */
 .hero {
     --photo-h: clamp(300px, 52vw, 640px);
+    min-height: var(--photo-h);
     background: #061120;
     position: relative;
     overflow: hidden;
@@ -154,10 +155,13 @@ img, video {
 }
 
 .hero-photo {
-    position: relative;
-    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     height: var(--photo-h);
     overflow: hidden;
+    z-index: 0;
 }
 
 .hero-bg-image {
@@ -171,7 +175,7 @@ img, video {
 .hero-photo-fade {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to bottom, rgba(6, 17, 32, 0) 55%, rgba(6, 17, 32, 0.55) 85%, rgba(6, 17, 32, 0.92) 100%);
+    background: linear-gradient(to bottom, rgba(6, 17, 32, 0) 15%, rgba(6, 17, 32, 0.55) 48%, rgba(6, 17, 32, 0.92) 72%, rgba(6, 17, 32, 0.98) 100%);
     pointer-events: none;
 }
 
@@ -192,8 +196,8 @@ img, video {
     max-width: 1200px;
     width: 100%;
     min-width: 0;
-    margin: calc(var(--photo-h) * -0.2) auto 0;
-    padding: 0 20px;
+    margin: 0 auto;
+    padding: calc(var(--photo-h) * 0.5) 20px 0;
     position: relative;
     z-index: 2;
 }
