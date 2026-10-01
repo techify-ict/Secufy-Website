@@ -214,7 +214,6 @@ img, video {
     font-size: 1rem;
     font-weight: 600;
     margin-bottom: 1.5rem;
-    animation: fadeInUp 1s ease;
 }
 
 .hero-badge i {
@@ -229,13 +228,11 @@ img, video {
     text-transform: uppercase;
     color: var(--secondary-color);
     margin-bottom: 0.75rem;
-    animation: fadeInUp 1s ease 0.05s both;
 }
 
 .hero-title {
     margin-bottom: 1.5rem;
     line-height: 1.1;
-    animation: fadeInUp 1s ease 0.1s both;
     overflow-wrap: break-word;
     word-break: break-word;
 }
@@ -264,7 +261,6 @@ img, video {
     opacity: 0.95;
     line-height: 1.8;
     max-width: 650px;
-    animation: fadeInUp 1s ease 0.2s both;
 }
 
 .hero-features {
@@ -272,7 +268,6 @@ img, video {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     margin-bottom: 2rem;
-    animation: fadeInUp 1s ease 0.3s both;
 }
 
 .hero-feature {
@@ -301,7 +296,6 @@ img, video {
     display: flex;
     gap: 1rem;
     margin-bottom: 2.5rem;
-    animation: fadeInUp 1s ease 0.4s both;
 }
 
 .hero-buttons .btn {
@@ -323,7 +317,6 @@ img, video {
     border-radius: 15px;
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
-    animation: fadeInUp 1s ease 0.5s both;
 }
 
 .trust-item {
@@ -370,7 +363,6 @@ img, video {
     padding: 0.6rem 1.1rem;
     border-radius: 50px;
     margin-top: 0.5rem;
-    animation: fadeInUp 1s ease 0.55s both;
 }
 
 .hero-tagline i {
