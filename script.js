@@ -578,18 +578,6 @@ if (statsSection) {
     statsObserver.observe(statsSection);
 }
 
-// Parallax Effect for Hero Section
-window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
-    const hero = document.querySelector('.hero');
-    const heroContent = document.querySelector('.hero-content');
-    
-    if (hero && heroContent) {
-        heroContent.style.transform = `translateY(${scrolled * 0.5}px)`;
-        heroContent.style.opacity = 1 - scrolled / 800;
-    }
-});
-
 // Add loading animation
 window.addEventListener('load', () => {
     document.body.style.opacity = '0';
