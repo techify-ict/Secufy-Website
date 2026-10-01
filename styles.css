@@ -147,7 +147,7 @@ img, video {
 /* Hero Section */
 .hero {
     --photo-h: clamp(161px, 42.86vw, 640px);
-    min-height: var(--photo-h);
+    min-height: calc(80px + var(--photo-h));
     background: #061120;
     position: relative;
     overflow: hidden;
@@ -156,7 +156,7 @@ img, video {
 
 .hero-photo {
     position: absolute;
-    top: 0;
+    top: 80px;
     left: 0;
     right: 0;
     height: var(--photo-h);
@@ -197,7 +197,7 @@ img, video {
     width: 100%;
     min-width: 0;
     margin: 0 auto;
-    padding: calc(var(--photo-h) * 0.5) 20px 0;
+    padding: calc(80px + var(--photo-h) * 0.5) 20px 0;
     position: relative;
     z-index: 2;
 }
@@ -1587,22 +1587,6 @@ img, video {
 
     .hero-content {
         max-width: 100%;
-    }
-
-    .hero {
-        min-height: calc(80px + var(--photo-h));
-    }
-
-    .hero-photo {
-        top: 80px;
-    }
-
-    .hero-container {
-        padding-top: calc(80px + var(--photo-h));
-    }
-
-    .hero-photo-fade {
-        background: linear-gradient(to bottom, rgba(6, 17, 32, 0) 70%, rgba(6, 17, 32, 0.85) 92%, rgba(6, 17, 32, 1) 100%);
     }
 
     .hero-title-main {
