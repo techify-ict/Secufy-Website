@@ -146,7 +146,7 @@ img, video {
 
 /* Hero Section */
 .hero {
-    --photo-h: clamp(300px, 52vw, 640px);
+    --photo-h: clamp(161px, 42.86vw, 640px);
     min-height: var(--photo-h);
     background: #061120;
     position: relative;
@@ -167,7 +167,7 @@ img, video {
 .hero-bg-image {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
     object-position: center center;
     display: block;
 }
@@ -1587,6 +1587,14 @@ img, video {
 
     .hero-content {
         max-width: 100%;
+    }
+
+    .hero-container {
+        padding-top: var(--photo-h);
+    }
+
+    .hero-photo-fade {
+        background: linear-gradient(to bottom, rgba(6, 17, 32, 0) 70%, rgba(6, 17, 32, 0.85) 92%, rgba(6, 17, 32, 1) 100%);
     }
 
     .hero-title-main {
