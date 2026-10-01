@@ -168,13 +168,6 @@ img, video {
     display: block;
 }
 
-.hero-photo-fade {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to bottom, rgba(6, 17, 32, 0) 42%, rgba(6, 17, 32, 0.6) 72%, rgba(6, 17, 32, 0.96) 100%);
-    pointer-events: none;
-}
-
 .hero::after {
     content: '';
     position: absolute;
@@ -192,7 +185,7 @@ img, video {
     max-width: 1200px;
     width: 100%;
     min-width: 0;
-    margin: calc(var(--photo-h) * -0.32) auto 0;
+    margin: 0 auto;
     padding: 0 20px;
     position: relative;
     z-index: 2;
@@ -201,6 +194,7 @@ img, video {
 .hero-content {
     color: white;
     max-width: 700px;
+    padding-top: 48px;
 }
 
 .hero-badge {
