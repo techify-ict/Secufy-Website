@@ -570,6 +570,7 @@ img, video {
 
 .service-menu-text {
     flex: 1;
+    min-width: 0;
 }
 
 .service-menu-text h4 {
@@ -578,6 +579,7 @@ img, video {
     margin-bottom: 0.25rem;
     color: var(--text-dark);
     transition: color 0.3s ease;
+    overflow-wrap: break-word;
 }
 
 .service-menu-item.active .service-menu-text h4 {
@@ -656,6 +658,7 @@ img, video {
     font-weight: 700;
     color: var(--text-dark);
     margin-bottom: 1rem;
+    overflow-wrap: break-word;
 }
 
 .service-description {
@@ -755,6 +758,7 @@ img, video {
     border-radius: 12px;
     text-align: center;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    min-width: 0;
 }
 
 .industry-card i {
